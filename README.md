@@ -1,6 +1,6 @@
 # Simple Definition List Blocks #
 **Contributors:** [chiilog](https://profiles.wordpress.org/mel_cha)  
-**Donate link:**       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share
+**Donate link:**       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share  
 **Tags:**              posts, blocks  
 **Requires at least:** 5.2.1  
 **Tested up to:**      5.2.1  
