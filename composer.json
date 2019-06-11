@@ -1,0 +1,35 @@
+{
+  "name": "chiilog/simple-definition-list-blocks",
+  "description": "simple description block",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Chiaki Obara",
+      "email": "purgexpurge@gmail.com"
+    }
+  ],
+  "require": {
+    "php":">=7.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.3",
+    "wp-coding-standards/wpcs": "^1.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/phpcs -i"
+    ],
+    "phpcs": [
+      "vendor/bin/phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php"
+    ],
+    "autofix": [
+      "vendor/bin/phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php --report-diff=changes.diff; patch -p0 -ui changes.diff; rm changes.diff"
+    ],
+    "test": [
+      "@phpcs"
+    ]
+  }
+}
