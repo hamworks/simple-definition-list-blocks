@@ -1,6 +1,6 @@
 {
   "name": "simple-definition-list-blocks",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Chiaki Obara <purgexpurge@gmail.com> (https://chiilog.com/)",
   "scripts": {
     "build": "npm run build:production",
