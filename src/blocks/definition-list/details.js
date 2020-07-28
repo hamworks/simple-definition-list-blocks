@@ -1,14 +1,20 @@
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
-import { RichText } from '@wordpress/editor';
+import { RichText } from '@wordpress/block-editor';
 
-const description_name = 'simple-definition-list-blocks/details';
-const description_settings = {
-	title: __( 'dd tag (Simple Definition List Blocks)', 'simple-definition-list-blocks' ),
+const descriptionSettings = {
+	title: __(
+		'dd tag (Simple Definition List Blocks)',
+		'simple-definition-list-blocks'
+	),
 	description: __( 'Create dd html tag.', 'simple-definition-list-blocks' ),
 	icon: 'editor-help',
 	category: 'formatting',
-	keywords: [ __( 'definition', 'simple-definition-list-blocks' ), __( 'details', 'simple-definition-list-blocks' ), __( 'dd', 'simple-definition-list-blocks' ) ],
+	keywords: [
+		__( 'definition', 'simple-definition-list-blocks' ),
+		__( 'details', 'simple-definition-list-blocks' ),
+		__( 'dd', 'simple-definition-list-blocks' ),
+	],
 	parent: [ 'simple-definition-list-blocks/list' ],
 	attributes: {
 		content: {
@@ -29,7 +35,10 @@ const description_settings = {
 				className={ className }
 				onChange={ onChangeContent }
 				value={ content }
-				placeholder={ __( 'Start writing dd tag contents.', 'simple-definition-list-blocks' ) }
+				placeholder={ __(
+					'Start writing dd tag contents.',
+					'simple-definition-list-blocks'
+				) }
 			/>
 		);
 	},
@@ -39,4 +48,7 @@ const description_settings = {
 	},
 };
 
-registerBlockType( description_name, description_settings );
+registerBlockType(
+	'simple-definition-list-blocks/details',
+	descriptionSettings
+);
