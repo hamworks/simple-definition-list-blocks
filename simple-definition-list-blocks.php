@@ -12,55 +12,31 @@
  * @package         Simple_Definition_List_Blocks
  */
 
-namespace Simple_Definition_List_Blocks;
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-/**
- * Plugin file path.
-
- * @type string
- */
-const PLUGIN_FILE = __FILE__;
+defined( 'ABSPATH' ) || exit;
 
 /**
- * Get plugin information.
- *
- * @return array {
- *     Array of plugin information for the strings.
- *
- *     @type string $Name        Plugin mame.
- *     @type string $PluginURI   Plugin URL.
- *     @type string $Version     Version.
- *     @type string $Description Description.
- *     @type string $Author      Author name.
- *     @type string $AuthorURI   Author URL.
- *     @type string $TextDomain  textdomain.
- *     @type string $DomainPath  mo file dir.
- *     @type string $Network     Multisite.
- * }
+ * Block registration.
  */
-function get_plugin_data() {
-	static $data = null;
-	if ( empty( $data ) ) {
-		$data = \get_file_data(
-			__FILE__,
-			[
-				'Name'        => 'Plugin Name',
-				'PluginURI'   => 'Plugin URI',
-				'Version'     => 'Version',
-				'Description' => 'Description',
-				'Author'      => 'Author',
-				'AuthorURI'   => 'Author URI',
-				'TextDomain'  => 'Text Domain',
-				'DomainPath'  => 'Domain Path',
-				'Network'     => 'Network',
-			]
-		);
-	}
+function simple_definition_list_blocks_register_block() {
+	$asset_file = include plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
+	wp_register_script(
+		'simple-definition-list-blocks',
+		plugins_url( 'build/index.js', __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
+	);
 
-	return $data;
+	wp_register_style(
+		'simple-definition-list-blocks',
+		plugins_url( 'build/index.css', __FILE__ ),
+		array(),
+		$asset_file['version']
+	);
+
+	register_block_type( 'simple-definition-list-blocks/list', array(
+		'editor_script' => 'simple-definition-list-blocks',
+	) );
 }
 
-require_once dirname( __FILE__ ) . '/src/init.php';
+add_action( 'init', 'simple_definition_list_blocks_register_block' );
