@@ -1,0 +1,12 @@
+.wp-block-simple-definition-list-blocks-list {
+	padding: 1em;
+	background: #f3f3f3;
+}
+
+.wp-block-simple-definition-list-blocks-term {
+	font-weight: bold;
+}
+
+.wp-block-simple-definition-list-blocks-details {
+	margin-left: 2em;
+}

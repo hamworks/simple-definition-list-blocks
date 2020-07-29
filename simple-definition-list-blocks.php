@@ -36,6 +36,7 @@ function simple_definition_list_blocks_register_block() {
 
 	register_block_type( 'simple-definition-list-blocks/list', array(
 		'editor_script' => 'simple-definition-list-blocks',
+		'style'         => 'simple-definition-list-blocks',
 	) );
 }
 
