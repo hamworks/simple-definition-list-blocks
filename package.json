@@ -1,7 +1,7 @@
 {
   "name": "simple-definition-list-blocks",
   "version": "0.1.5",
-  "author": "Chiaki Obara <purgexpurge@gmail.com> (https://chiilog.com/)",
+  "author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
   "dependencies": {},
   "devDependencies": {
     "@wordpress/browserslist-config": "2.7.0",
