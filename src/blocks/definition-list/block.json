@@ -1,0 +1,21 @@
+{
+  "name": "simple-definition-list-blocks/simple-definition-list",
+  "title": "Definition List",
+  "icon": "admin-users",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "text",
+  "keywords": [ "definition", "simple-definition-list-blocks" ],
+  "attributes": {
+    "dt": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-simple-definition-list-blocks-term"
+    },
+    "dd": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-simple-definition-list-blocks-details"
+    }
+  },
+  "editorScript": "file:../../build/index.js"
+}

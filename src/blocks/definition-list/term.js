@@ -18,9 +18,9 @@ const termSettings = {
 	parent: [ 'simple-definition-list-blocks/list' ],
 	attributes: {
 		content: {
-			type: 'array',
-			source: 'children',
-			selector: 'dt',
+			type: 'string',
+			source: 'html',
+			selector: '.wp-block-simple-definition-list-blocks-term',
 		},
 	},
 	supports: {

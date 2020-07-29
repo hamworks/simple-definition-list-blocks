@@ -18,6 +18,18 @@ const listSettings = {
 	icon: 'admin-page',
 	category: 'formatting',
 	keywords: [ __( 'definition', 'simple-definition-list-blocks' ) ],
+	attributes: {
+		dt: {
+			type: 'string',
+			source: 'html',
+			selector: '.wp-block-simple-definition-list-blocks-term'
+		},
+		dd: {
+			type: 'string',
+			source: 'html',
+			selector: '.wp-block-simple-definition-list-blocks-details'
+		},
+	},
 
 	edit( { className } ) {
 		return (

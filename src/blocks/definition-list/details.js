@@ -18,9 +18,9 @@ const descriptionSettings = {
 	parent: [ 'simple-definition-list-blocks/list' ],
 	attributes: {
 		content: {
-			type: 'array',
-			source: 'children',
-			selector: 'dd',
+			type: 'string',
+			source: 'html',
+			selector: '.wp-block-simple-definition-list-blocks-details',
 		},
 	},
 
