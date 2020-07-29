@@ -23,6 +23,9 @@ const termSettings = {
 			selector: 'dt',
 		},
 	},
+	supports: {
+		anchor: true,
+	},
 
 	edit( { attributes: { content }, setAttributes, className } ) {
 		const onChangeContent = ( newContent ) => {
