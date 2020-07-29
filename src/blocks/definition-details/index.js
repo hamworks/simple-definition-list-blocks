@@ -12,7 +12,6 @@ const descriptionSettings = {
 	category: 'formatting',
 	keywords: [
 		__( 'definition', 'simple-definition-list-blocks' ),
-		__( 'details', 'simple-definition-list-blocks' ),
 		__( 'dd', 'simple-definition-list-blocks' ),
 	],
 	parent: [ 'simple-definition-list-blocks/list' ],

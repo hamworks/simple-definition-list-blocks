@@ -38,6 +38,16 @@ function simple_definition_list_blocks_register_block() {
 		'editor_script' => 'simple-definition-list-blocks',
 		'style'         => 'simple-definition-list-blocks',
 	) );
+
+	register_block_type( 'simple-definition-list-blocks/term', array(
+		'editor_script' => 'simple-definition-list-blocks',
+		'style'         => 'simple-definition-list-blocks',
+	) );
+
+	register_block_type( 'simple-definition-list-blocks/details', array(
+		'editor_script' => 'simple-definition-list-blocks',
+		'style'         => 'simple-definition-list-blocks',
+	) );
 }
 
 add_action( 'init', 'simple_definition_list_blocks_register_block' );

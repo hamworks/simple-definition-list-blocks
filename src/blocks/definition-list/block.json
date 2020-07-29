@@ -1,21 +1,9 @@
 {
-  "name": "simple-definition-list-blocks/simple-definition-list",
-  "title": "Definition List",
+  "name": "simple-definition-list-blocks/list",
+  "title": "definition list (Simple Definition List Blocks)",
   "icon": "admin-page",
   "textdomain": "simple-definition-list-blocks",
-  "category": "text",
-  "keywords": [ "definition", "simple-definition-list-blocks" ],
-  "attributes": {
-    "dt": {
-      "type": "string",
-      "source": "html",
-      "selector": ".wp-block-simple-definition-list-blocks-term"
-    },
-    "dd": {
-      "type": "string",
-      "source": "html",
-      "selector": ".wp-block-simple-definition-list-blocks-details"
-    }
-  },
+  "category": "formatting",
+  "keywords": [ "definition", "dl" ],
   "editorScript": "file:../../build/index.js"
 }
