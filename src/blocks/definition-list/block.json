@@ -1,0 +1,9 @@
+{
+  "name": "simple-definition-list-blocks/list",
+  "title": "definition list (Simple Definition List Blocks)",
+  "icon": "admin-page",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "formatting",
+  "keywords": [ "definition", "dl" ],
+  "editorScript": "file:../../build/index.js"
+}

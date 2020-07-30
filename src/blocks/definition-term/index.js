@@ -1,21 +1,30 @@
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
-import { RichText } from '@wordpress/editor';
+import { RichText } from '@wordpress/block-editor';
 
-const term_name = 'simple-definition-list-blocks/term';
-const term_settings = {
-	title: __( 'dt tag (Simple Definition List Blocks)', 'simple-definition-list-blocks' ),
+const termSettings = {
+	title: __(
+		'dt tag (Simple Definition List Blocks)',
+		'simple-definition-list-blocks'
+	),
 	description: __( 'Create dt html tag.', 'simple-definition-list-blocks' ),
 	icon: 'info',
 	category: 'formatting',
-	keywords: [ __( 'definition', 'simple-definition-list-blocks' ), __( 'terms', 'simple-definition-list-blocks' ), __( 'dd', 'simple-definition-list-blocks' ) ],
+	keywords: [
+		__( 'definition', 'simple-definition-list-blocks' ),
+		__( 'terms', 'simple-definition-list-blocks' ),
+		__( 'dd', 'simple-definition-list-blocks' ),
+	],
 	parent: [ 'simple-definition-list-blocks/list' ],
 	attributes: {
 		content: {
-			type: 'array',
-			source: 'children',
-			selector: 'dt',
+			type: 'string',
+			source: 'html',
+			selector: '.wp-block-simple-definition-list-blocks-term',
 		},
+	},
+	supports: {
+		anchor: true,
 	},
 
 	edit( { attributes: { content }, setAttributes, className } ) {
@@ -29,7 +38,10 @@ const term_settings = {
 				className={ className }
 				onChange={ onChangeContent }
 				value={ content }
-				placeholder={ __( 'Start writing dt tag contents.', 'simple-definition-list-blocks' ) }
+				placeholder={ __(
+					'Start writing dt tag contents.',
+					'simple-definition-list-blocks'
+				) }
 			/>
 		);
 	},
@@ -39,4 +51,4 @@ const term_settings = {
 	},
 };
 
-registerBlockType( term_name, term_settings );
+registerBlockType( 'simple-definition-list-blocks/term', termSettings );

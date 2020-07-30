@@ -1,0 +1,17 @@
+{
+  "name": "simple-definition-list-blocks/details",
+  "title": "dd tag (Simple Definition List Blocks)",
+  "icon": "editor-help",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "formatting",
+  "parent": [ "simple-definition-list-blocks/list" ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-simple-definition-list-blocks-details"
+    }
+  },
+  "keywords": [ "definition", "dd" ],
+  "editorScript": "file:../../build/index.js"
+}

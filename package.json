@@ -1,66 +1,53 @@
 {
   "name": "simple-definition-list-blocks",
-  "version": "0.1.5",
-  "author": "Chiaki Obara <purgexpurge@gmail.com> (https://chiilog.com/)",
-  "scripts": {
-    "build": "npm run build:production",
-    "build:production": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack --watch",
-    "test": "wp-scripts test-unit-js --config tests/js/jest.config.json"
-  },
+  "version": "0.2",
+  "author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-transform-react-jsx": "^7.2.0",
-    "@babel/polyfill": "^7.2.5",
-    "@wordpress/babel-plugin-import-jsx-pragma": "^1.1.2",
-    "@wordpress/babel-preset-default": "^3.0.1",
-    "@wordpress/browserslist-config": "^2.2.2",
-    "@wordpress/jest-preset-default": "^3.0.3",
-    "@wordpress/scripts": "^2.4.4",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
-    "browser-sync": "^2.26.3",
-    "cross-env": "^5.2.0",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "eslint": "^5.11.1",
-    "eslint-config-wordpress": "^2.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-wordpress": "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git",
-    "grunt": "~1.0.3",
-    "grunt-wp-i18n": "~1.0.3",
-    "grunt-wp-readme-to-markdown": "~2.0.1",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.7.0",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2"
+    "@wordpress/browserslist-config": "2.7.0",
+    "@wordpress/scripts": "^12.1.1",
+    "cssnano": "^4.1.10",
+    "postcss-import": "^12.0.1",
+    "postcss-import-resolver": "^2.0.0",
+    "postcss-omit-import-tilde": "^1.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-pxtorem": "^4.0.1",
+    "prettier": "npm:wp-prettier@^2.0.4"
   },
-  "dependencies": {
-    "@wordpress/api-fetch": "^2.2.6",
-    "@wordpress/blocks": "^6.0.5",
-    "@wordpress/components": "^7.0.4",
-    "@wordpress/compose": "^3.0.0",
-    "@wordpress/data": "^4.1.0",
-    "@wordpress/editor": "^9.0.6",
-    "@wordpress/element": "^2.1.8",
-    "@wordpress/i18n": "^3.1.0",
-    "@wordpress/url": "^2.3.2",
-    "codemirror": "^5.42.2",
-    "xss": "^1.0.3"
-  },
+  "license": "GPL-2.0+",
+  "main": "build/index.js",
   "release-it": {
+    "hooks": {
+      "before:bump": "bash ./bin/build.sh simple-definition-list-blocks ${version}",
+      "after:bump": "bash ./bin/create-zip.sh simple-definition-list-blocks",
+      "after:release": "bash ./bin/cleanup.sh simple-definition-list-blocks"
+    },
     "github": {
-      "release": true
+      "release": true,
+      "assets": [
+        "simple-definition-list-blocks.zip"
+      ]
     },
     "npm": {
       "publish": false
     }
+  },
+  "repository": {
+    "url": "git@github.com:chiilog/simple-definition-list-blocks.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production npm run build:dev",
+    "build:dev": "wp-scripts build",
+    "env": "wp-scripts env",
+    "lint-js": "wp-scripts lint-js src",
+    "lint-js:fix": "npm run lint-js -- --fix",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start"
+  },
+  "wp-env": {
+    "plugin-dir": "simple-definition-list-blocks",
+    "plugin-name": "simple-definition-list-blocks",
+    "welcome-build-command": "npm run start"
   }
 }
