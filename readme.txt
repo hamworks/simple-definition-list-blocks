@@ -16,6 +16,7 @@ A simple definition list.
 = Custom HTML Block =
 
 A simple definition list for Gutenberg.
+Only dt and dd tags are supported.
 
 == Changelog ==
 
