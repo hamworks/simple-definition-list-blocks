@@ -19,6 +19,9 @@ A simple definition list for Gutenberg.
 
 ## Changelog ##
 
+### 0.2.0 ###
+* add HTML anchor for dt tag.
+
 ### 0.1.0 ###
 * first release.
 
