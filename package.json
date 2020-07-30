@@ -17,16 +17,8 @@
   "license": "GPL-2.0+",
   "main": "build/index.js",
   "release-it": {
-    "hooks": {
-      "before:bump": "bash ./bin/build.sh simple-definition-list-blocks ${version}",
-      "after:bump": "bash ./bin/create-zip.sh simple-definition-list-blocks",
-      "after:release": "bash ./bin/cleanup.sh simple-definition-list-blocks"
-    },
     "github": {
-      "release": true,
-      "assets": [
-        "simple-definition-list-blocks.zip"
-      ]
+      "release": true
     },
     "npm": {
       "publish": false
