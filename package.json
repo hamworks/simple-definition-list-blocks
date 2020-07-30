@@ -46,8 +46,8 @@
     "start": "wp-scripts start"
   },
   "wp-env": {
-    "plugin-dir": "user-profile-block",
-    "plugin-name": "user-profile-block",
+    "plugin-dir": "simple-definition-list-blocks",
+    "plugin-name": "simple-definition-list-blocks",
     "welcome-build-command": "npm run start"
   }
 }
