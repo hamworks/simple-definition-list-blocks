@@ -27,18 +27,10 @@ function simple_definition_list_blocks_register_block() {
 		true
 	);
 
-	wp_register_style(
-		'simple-definition-list-blocks',
-		plugins_url( 'build/index.css', __FILE__ ),
-		array(),
-		$asset_file['version']
-	);
-
 	register_block_type(
 		'simple-definition-list-blocks/list',
 		array(
 			'editor_script' => 'simple-definition-list-blocks',
-			'style'         => 'simple-definition-list-blocks',
 		)
 	);
 
@@ -46,7 +38,6 @@ function simple_definition_list_blocks_register_block() {
 		'simple-definition-list-blocks/term',
 		array(
 			'editor_script' => 'simple-definition-list-blocks',
-			'style'         => 'simple-definition-list-blocks',
 		)
 	);
 
@@ -54,7 +45,6 @@ function simple_definition_list_blocks_register_block() {
 		'simple-definition-list-blocks/details',
 		array(
 			'editor_script' => 'simple-definition-list-blocks',
-			'style'         => 'simple-definition-list-blocks',
 		)
 	);
 }

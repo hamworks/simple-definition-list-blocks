@@ -13,12 +13,13 @@ A simple definition list.
 
 ## Description ##
 
-### Description Tag Block ###
-
-A simple definition list for Gutenberg.  
+Add simple definition list block.  
 Only dt and dd tags are supported.
 
 ## Changelog ##
+
+### 0.2.6 ###
+* remove index.css
 
 ### 0.2.0 ###
 * add HTML anchor for dt tag.
