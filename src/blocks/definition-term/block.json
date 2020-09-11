@@ -1,9 +1,10 @@
 {
-  "name": "simple-definition-list-blocks/details",
+  "name": "simple-definition-list-blocks/term",
   "title": "dt tag (Simple Definition List Blocks)",
   "icon": "info",
+  "description": "Create dt html tag.",
   "textdomain": "simple-definition-list-blocks",
-  "category": "formatting",
+  "category": "text",
   "parent": [ "simple-definition-list-blocks/list" ],
   "attributes": {
     "content": {
@@ -11,6 +12,9 @@
       "source": "html",
       "selector": ".wp-block-simple-definition-list-blocks-term"
     }
+  },
+  "supports": {
+    "anchor": true
   },
   "keywords": [ "definition", "dd" ],
   "editorScript": "file:../../build/index.js"

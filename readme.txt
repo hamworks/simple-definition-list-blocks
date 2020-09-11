@@ -2,8 +2,8 @@
 Contributors: mel_cha
 Donate link:       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share
 Tags:              posts, blocks
-Requires at least: 5.4.2
-Tested up to:      5.2.1
+Requires at least: 5.2.1
+Tested up to:      5.5.1
 Requires PHP:      7.0
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -18,7 +18,10 @@ Only dt and dd tags are supported.
 
 == Changelog ==
 
-= 0.2.6 =
+= 1.0.1 =
+* test WordPress 5.5.1
+
+= 1.0.0 =
 * remove index.css
 
 = 0.2.0 =

@@ -1,28 +1,11 @@
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
 import { RichText } from '@wordpress/block-editor';
+import metadata from './block.json';
+const { name } = metadata;
 
-const descriptionSettings = {
-	title: __(
-		'dd tag (Simple Definition List Blocks)',
-		'simple-definition-list-blocks'
-	),
-	description: __( 'Create dd html tag.', 'simple-definition-list-blocks' ),
-	icon: 'editor-help',
-	category: 'formatting',
-	keywords: [
-		__( 'definition', 'simple-definition-list-blocks' ),
-		__( 'dd', 'simple-definition-list-blocks' ),
-	],
-	parent: [ 'simple-definition-list-blocks/list' ],
-	attributes: {
-		content: {
-			type: 'string',
-			source: 'html',
-			selector: '.wp-block-simple-definition-list-blocks-details',
-		},
-	},
-
+registerBlockType( name, {
+	...metadata,
 	edit( { attributes: { content }, setAttributes, className } ) {
 		const onChangeContent = ( newContent ) => {
 			setAttributes( { content: newContent } );
@@ -45,9 +28,4 @@ const descriptionSettings = {
 	save( { attributes: { content }, className } ) {
 		return <RichText.Content tagName="dd" value={ content } />;
 	},
-};
-
-registerBlockType(
-	'simple-definition-list-blocks/details',
-	descriptionSettings
-);
+} );

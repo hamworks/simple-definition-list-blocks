@@ -3,7 +3,8 @@
   "title": "definition list (Simple Definition List Blocks)",
   "icon": "admin-page",
   "textdomain": "simple-definition-list-blocks",
-  "category": "formatting",
+  "description": "Display a definition list. Add a term or details.",
+  "category": "text",
   "keywords": [ "definition", "dl" ],
   "editorScript": "file:../../build/index.js"
 }

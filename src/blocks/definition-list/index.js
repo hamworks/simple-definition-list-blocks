@@ -1,24 +1,15 @@
-import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/block-editor';
+import metadata from './block.json';
+const { name } = metadata;
 
 const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/term',
 	'simple-definition-list-blocks/details',
 ];
-const listSettings = {
-	title: __(
-		'definition list (Simple Definition List Blocks)',
-		'simple-definition-list-blocks'
-	),
-	description: __(
-		'Display a definition list. Add a term or details.',
-		'simple-definition-list-blocks'
-	),
-	icon: 'admin-page',
-	category: 'formatting',
-	keywords: [ __( 'definition', 'simple-definition-list-blocks', 'dl' ) ],
 
+registerBlockType( name, {
+	...metadata,
 	edit( { className } ) {
 		return (
 			<dl className={ className }>
@@ -34,6 +25,4 @@ const listSettings = {
 			</dl>
 		);
 	},
-};
-
-registerBlockType( 'simple-definition-list-blocks/list', listSettings );
+} );
