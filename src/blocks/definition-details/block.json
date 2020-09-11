@@ -2,8 +2,9 @@
   "name": "simple-definition-list-blocks/details",
   "title": "dd tag (Simple Definition List Blocks)",
   "icon": "editor-help",
+  "description": "Create dd html tag.",
   "textdomain": "simple-definition-list-blocks",
-  "category": "formatting",
+  "category": "text",
   "parent": [ "simple-definition-list-blocks/list" ],
   "attributes": {
     "content": {
