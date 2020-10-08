@@ -1,0 +1,18 @@
+{
+  "name": "simple-definition-list-blocks/div",
+  "title": "div tag (Simple Definition List Blocks)",
+  "icon": "welcome-write-blog",
+  "description": "Create div html tag.",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "text",
+  "parent": [ "simple-definition-list-blocks/list" ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-simple-definition-list-blocks-div"
+    }
+  },
+  "keywords": [ "definition", "div" ],
+  "editorScript": "file:../../build/index.js"
+}

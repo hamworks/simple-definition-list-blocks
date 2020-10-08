@@ -5,7 +5,7 @@
   "description": "Create dt html tag.",
   "textdomain": "simple-definition-list-blocks",
   "category": "text",
-  "parent": [ "simple-definition-list-blocks/list" ],
+  "parent": [ "simple-definition-list-blocks/list", "simple-definition-list-blocks/div" ],
   "attributes": {
     "content": {
       "type": "string",

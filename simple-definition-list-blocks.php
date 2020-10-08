@@ -47,6 +47,13 @@ function simple_definition_list_blocks_register_block() {
 			'editor_script' => 'simple-definition-list-blocks',
 		)
 	);
+
+	register_block_type(
+		'simple-definition-list-blocks/div',
+		array(
+			'editor_script' => 'simple-definition-list-blocks',
+		)
+	);
 }
 
 add_action( 'init', 'simple_definition_list_blocks_register_block' );

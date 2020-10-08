@@ -14,9 +14,12 @@ A simple definition list.
 ## Description ##
 
 Add simple definition list block.  
-Only dt and dd tags are supported.
+dt, dd, and div tags are supported.
 
 ## Changelog ##
+
+### 2.0.0 ###
+* Add simple-definition-list-blocks/div block
 
 ### 1.0.1 ###
 * test WordPress 5.5.1

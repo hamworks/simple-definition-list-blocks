@@ -6,24 +6,23 @@ const { name } = metadata;
 const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/term',
 	'simple-definition-list-blocks/details',
-	'simple-definition-list-blocks/div',
 ];
 
 registerBlockType( name, {
 	...metadata,
 	edit( { className } ) {
 		return (
-			<dl className={ className }>
+			<div className={ className }>
 				<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
-			</dl>
+			</div>
 		);
 	},
 
 	save( { className } ) {
 		return (
-			<dl className={ className }>
+			<div className={ className }>
 				<InnerBlocks.Content />
-			</dl>
+			</div>
 		);
 	},
 } );
