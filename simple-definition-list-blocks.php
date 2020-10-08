@@ -7,7 +7,7 @@
  * Author URI:      https://chiilog.com
  * Text Domain:     simple-definition-list-blocks
  * Domain Path:     /languages
- * Version: 1.0.1
+ * Version: 2.0.0
  *
  * @package         Simple_Definition_List_Blocks
  */
