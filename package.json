@@ -5,6 +5,7 @@
   "dependencies": {},
   "devDependencies": {
     "@wordpress/browserslist-config": "3.0.0",
+    "@wordpress/eslint-plugin": "^7.1.0",
     "@wordpress/scripts": "^13.0.0",
     "cssnano": "^4.1.10",
     "postcss-import": "^14.0.0",
