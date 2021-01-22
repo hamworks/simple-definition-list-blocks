@@ -7,7 +7,7 @@
  * Author URI:      https://chiilog.com
  * Text Domain:     simple-definition-list-blocks
  * Domain Path:     /languages
- * Version: 2.0.0
+ * Version: 3.0.0
  *
  * @package         Simple_Definition_List_Blocks
  */
@@ -43,6 +43,13 @@ function simple_definition_list_blocks_register_block() {
 
 	register_block_type(
 		'simple-definition-list-blocks/details',
+		array(
+			'editor_script' => 'simple-definition-list-blocks',
+		)
+	);
+
+	register_block_type(
+		'simple-definition-list-blocks/details-html',
 		array(
 			'editor_script' => 'simple-definition-list-blocks',
 		)

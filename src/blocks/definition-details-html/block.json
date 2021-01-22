@@ -1,0 +1,18 @@
+{
+  "name": "simple-definition-list-blocks/details-html",
+  "title": "dd tag that can use html (Simple Definition List Blocks)",
+  "icon": "editor-help",
+  "description": "Create dd html tag.",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "text",
+  "parent": [ "simple-definition-list-blocks/list", "simple-definition-list-blocks/div" ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-simple-definition-list-blocks-details-html"
+    }
+  },
+  "keywords": [ "definition", "dd" ],
+  "editorScript": "file:../../build/index.js"
+}
