@@ -6,6 +6,7 @@ const { name } = metadata;
 const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/term',
 	'simple-definition-list-blocks/details',
+	'simple-definition-list-blocks/details-html',
 ];
 
 registerBlockType( name, {
