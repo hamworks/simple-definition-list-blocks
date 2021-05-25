@@ -1,0 +1,19 @@
+<wpml-config>
+        <gutenberg-blocks>
+                <gutenberg-block type="simple-definition-list-blocks/div" translate="1">
+                        <xpath label="sdl-blocks/div">//div</xpath>
+                </gutenberg-block>
+                <gutenberg-block type="simple-definition-list-blocks/list" translate="1">
+                        <xpath label="sdl-blocks/list">//dl</xpath>
+                </gutenberg-block>
+                <gutenberg-block type="simple-definition-list-blocks/term" translate="1">
+                        <xpath label="sdl-blocks/term">//dt</xpath>
+                </gutenberg-block>
+                <gutenberg-block type="simple-definition-list-blocks/details-html" translate="1">
+                        <xpath label="sdl-blocks/details-html">//dd</xpath>
+                </gutenberg-block>
+                <gutenberg-block type="simple-definition-list-blocks/details" translate="1">
+                        <xpath label="sdl-blocks/details">//dd</xpath>
+                </gutenberg-block>
+        </gutenberg-blocks>
+</wpml-config>
