@@ -2,7 +2,11 @@
   "name": "simple-definition-list-blocks",
   "version": "3.0.1",
   "author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
-  "dependencies": {},
+  "dependencies": {
+    "@wordpress/block-editor": "^6.1.6",
+    "@wordpress/blocks": "^9.1.4",
+    "@wordpress/i18n": "^4.1.1"
+  },
   "devDependencies": {
     "@wordpress/browserslist-config": "3.0.0",
     "@wordpress/eslint-plugin": "^7.1.0",
