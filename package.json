@@ -8,6 +8,7 @@
     "@wordpress/eslint-plugin": "^7.1.0",
     "@wordpress/scripts": "^13.0.0",
     "cssnano": "^4.1.10",
+    "jest": "^27.0.5",
     "postcss-import": "^14.0.0",
     "postcss-import-resolver": "^2.0.0",
     "postcss-omit-import-tilde": "^1.0.1",
@@ -44,7 +45,8 @@
     "lint-js": "wp-scripts lint-js src",
     "lint-js:fix": "npm run lint-js -- --fix",
     "packages-update": "wp-scripts packages-update",
-    "start": "wp-scripts start"
+    "start": "wp-scripts start",
+    "test": "jest"
   },
   "wp-env": {
     "plugin-dir": "simple-definition-list-blocks",
