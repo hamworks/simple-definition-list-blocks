@@ -1,4 +1,5 @@
 {
+  "apiVersion": 2,
   "name": "simple-definition-list-blocks/list",
   "title": "definition list (Simple Definition List Blocks)",
   "icon": "admin-page",
