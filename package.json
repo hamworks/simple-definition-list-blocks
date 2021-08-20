@@ -8,10 +8,10 @@
     "@wordpress/i18n": "^4.1.1"
   },
   "devDependencies": {
-    "@wordpress/browserslist-config": "3.0.0",
-    "@wordpress/eslint-plugin": "^7.1.0",
+    "@wordpress/browserslist-config": "4.1.0",
+    "@wordpress/eslint-plugin": "^9.1.0",
     "@wordpress/prettier-config": "^1.1.0",
-    "@wordpress/scripts": "^13.0.0",
+    "@wordpress/scripts": "^17.1.0",
     "prettier": "npm:wp-prettier@^2.0.5"
   },
   "license": "GPL-2.0+",
