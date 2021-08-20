@@ -1,21 +1,22 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import metadata from './block.json';
 const { name } = metadata;
 
 registerBlockType( name, {
 	...metadata,
-	edit( { className } ) {
+	edit: () => {
+		const blockProps = useBlockProps();
 		return (
-			<dd className={ className }>
+			<dd { ...blockProps }>
 				<InnerBlocks />
 			</dd>
 		);
 	},
-
-	save( { className } ) {
+	save: () => {
+		const saveBlockProps = useBlockProps.save();
 		return (
-			<dd className={ className }>
+			<dd { ...saveBlockProps }>
 				<InnerBlocks.Content />
 			</dd>
 		);

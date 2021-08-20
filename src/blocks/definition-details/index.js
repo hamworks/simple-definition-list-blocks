@@ -25,7 +25,7 @@ registerBlockType( name, {
 		);
 	},
 
-	save( { attributes: { content }, className } ) {
+	save( { attributes: { content } } ) {
 		return <RichText.Content tagName="dd" value={ content } />;
 	},
 } );
