@@ -9,7 +9,9 @@ registerBlockType( name, {
 		const blockProps = useBlockProps();
 		return (
 			<dd { ...blockProps }>
-				<InnerBlocks />
+				<InnerBlocks
+					renderAppender={ InnerBlocks.ButtonBlockAppender }
+				/>
 			</dd>
 		);
 	},

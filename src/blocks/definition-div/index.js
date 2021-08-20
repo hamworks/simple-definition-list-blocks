@@ -15,7 +15,10 @@ registerBlockType( name, {
 		const blockProps = useBlockProps();
 		return (
 			<div { ...blockProps }>
-				<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
+				<InnerBlocks
+					allowedBlocks={ ALLOWED_BLOCKS }
+					renderAppender={ InnerBlocks.ButtonBlockAppender }
+				/>
 			</div>
 		);
 	},
