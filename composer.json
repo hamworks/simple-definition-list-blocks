@@ -10,14 +10,14 @@
     }
   ],
   "require": {
-    "php":">=7.0",
+    "php": ">=7.2",
     "ext-json": "*"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.4.2",
-    "wp-coding-standards/wpcs": "^2.0",
-    "phpcompatibility/phpcompatibility-wp": "^2.0",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "*",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "*"
   },
   "scripts": {
     "post-install-cmd": [
