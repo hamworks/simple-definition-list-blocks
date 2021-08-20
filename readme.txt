@@ -2,9 +2,9 @@
 Contributors: mel_cha
 Donate link:       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share
 Tags:              posts, blocks
-Requires at least: 5.2.1
-Tested up to:      5.5.1
-Requires PHP:      7.0
+Requires at least: 5.6
+Tested up to:      5.8
+Requires PHP:      7.2
 Stable tag: 3.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
