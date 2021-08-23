@@ -14,6 +14,14 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Load text domain.
+ */
+function simple_definition_list_blocks_load_textdomain() {
+	load_plugin_textdomain( 'simple-definition-list-blocks', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', 'simple_definition_list_blocks_load_textdomain' );
+
+/**
  * Block registration.
  */
 function simple_definition_list_blocks_register_block() {
