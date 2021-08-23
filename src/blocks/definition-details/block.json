@@ -1,4 +1,5 @@
 {
+  "apiVersion": 2,
   "name": "simple-definition-list-blocks/details",
   "title": "dd tag (Simple Definition List Blocks)",
   "icon": "editor-help",
@@ -10,7 +11,7 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": ".wp-block-simple-definition-list-blocks-details"
+      "selector": "dd.wp-block-simple-definition-list-blocks-details"
     }
   },
   "keywords": [ "definition", "dd" ],

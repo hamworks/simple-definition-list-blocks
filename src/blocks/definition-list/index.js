@@ -1,7 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import metadata from './block.json';
-const { name } = metadata;
 
 const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/term',
@@ -10,19 +9,23 @@ const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/div',
 ];
 
-registerBlockType( name, {
+registerBlockType( metadata, {
 	...metadata,
-	edit( { className } ) {
+	edit: () => {
+		const blockProps = useBlockProps();
 		return (
-			<dl className={ className }>
-				<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
+			<dl { ...blockProps }>
+				<InnerBlocks
+					allowedBlocks={ ALLOWED_BLOCKS }
+					renderAppender={ InnerBlocks.ButtonBlockAppender }
+				/>
 			</dl>
 		);
 	},
-
-	save( { className } ) {
+	save: () => {
+		const saveBlockProps = useBlockProps.save();
 		return (
-			<dl className={ className }>
+			<dl { ...saveBlockProps }>
 				<InnerBlocks.Content />
 			</dl>
 		);

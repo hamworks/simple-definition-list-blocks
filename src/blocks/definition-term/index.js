@@ -1,20 +1,20 @@
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
-import { RichText } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@wordpress/block-editor';
 import metadata from './block.json';
-const { name } = metadata;
 
-registerBlockType( name, {
+registerBlockType( metadata, {
 	...metadata,
-	edit( { attributes: { content }, setAttributes, className } ) {
+	edit( { attributes: { content }, setAttributes } ) {
+		const blockProps = useBlockProps();
 		const onChangeContent = ( newContent ) => {
 			setAttributes( { content: newContent } );
 		};
 
 		return (
 			<RichText
+				{ ...blockProps }
 				tagName="dt"
-				className={ className }
 				onChange={ onChangeContent }
 				value={ content }
 				placeholder={ __(
@@ -25,7 +25,14 @@ registerBlockType( name, {
 		);
 	},
 
-	save( { attributes: { content }, className } ) {
-		return <RichText.Content tagName="dt" value={ content } />;
+	save( { attributes: { content } } ) {
+		const saveBlockProps = useBlockProps.save();
+		return (
+			<RichText.Content
+				{ ...saveBlockProps }
+				tagName="dt"
+				value={ content }
+			/>
+		);
 	},
 } );
