@@ -1,12 +1,13 @@
 <?php
 /**
- * Plugin Name:     Simple Definition List Blocks
- * Plugin URI:      https://github.com/chiilog/simple-definition-list-blocks
- * Description:     A simple definition list.
- * Author:          mel_cha
- * Author URI:      https://chiilog.com
- * Text Domain:     simple-definition-list-blocks
- * Version: 4.0.1
+ * Plugin Name:       Simple Definition List Blocks
+ * Plugin URI:        https://github.com/chiilog/simple-definition-list-blocks
+ * Description:       A simple definition list.
+ * Author:            mel_cha
+ * Author URI:        https://chiilog.com
+ * Text Domain:       simple-definition-list-blocks
+ * Version:           4.0.1
+ * Requires at least: 5.8
  *
  * @package         Simple_Definition_List_Blocks
  */
