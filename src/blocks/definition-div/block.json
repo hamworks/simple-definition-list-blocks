@@ -1,4 +1,5 @@
 {
+  "apiVersion": 2,
   "name": "simple-definition-list-blocks/div",
   "title": "div tag (Simple Definition List Blocks)",
   "icon": "welcome-write-blog",
@@ -10,7 +11,7 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": ".wp-block-simple-definition-list-blocks-div"
+      "selector": "div.wp-block-simple-definition-list-blocks-div"
     }
   },
   "keywords": [ "definition", "div" ],

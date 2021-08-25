@@ -1,18 +1,26 @@
 <?php
 /**
- * Plugin Name:     Simple Definition List Blocks
- * Plugin URI:      https://github.com/chiilog/simple-definition-list-blocks
- * Description:     A simple definition list.
- * Author:          mel_cha
- * Author URI:      https://chiilog.com
- * Text Domain:     simple-definition-list-blocks
- * Domain Path:     /languages
- * Version: 3.0.1
+ * Plugin Name:       Simple Definition List Blocks
+ * Plugin URI:        https://github.com/chiilog/simple-definition-list-blocks
+ * Description:       A simple definition list.
+ * Author:            mel_cha
+ * Author URI:        https://chiilog.com
+ * Text Domain:       simple-definition-list-blocks
+ * Version: 4.0.2
+ * Requires at least: 5.8
  *
  * @package         Simple_Definition_List_Blocks
  */
 
 defined( 'ABSPATH' ) || exit;
+
+/**
+ * Load text domain.
+ */
+function simple_definition_list_blocks_load_textdomain() {
+	load_plugin_textdomain( 'simple-definition-list-blocks', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', 'simple_definition_list_blocks_load_textdomain' );
 
 /**
  * Block registration.

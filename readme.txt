@@ -2,10 +2,10 @@
 Contributors: mel_cha
 Donate link:       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share
 Tags:              posts, blocks
-Requires at least: 5.2.1
-Tested up to:      5.5.1
-Requires PHP:      7.0
-Stable tag: 3.0.1
+Requires at least: 5.6
+Tested up to:      5.8
+Requires PHP:      7.2
+Stable tag: 4.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,18 +18,27 @@ dt, dd, and div tags are supported.
 
 == Changelog ==
 
+= 4.0.0 =
+* Tested on WordPress 5.8.
+
+= 3.0.1 =
+* Create wpml-config.xml.
+
+= 3.0.0 =
+* Add dd tag that can use html.
+
 = 2.0.0 =
 * Add simple-definition-list-blocks/div block
 
 = 1.0.1 =
-* test WordPress 5.5.1
+* Tested on WordPress 5.5.1.
 
 = 1.0.0 =
-* remove index.css
+* Remove index.css
 
 = 0.2.0 =
-* add HTML anchor for dt tag.
+* Add HTML anchor for dt tag.
 
 = 0.1.0 =
-* first release.
+* First release.
 

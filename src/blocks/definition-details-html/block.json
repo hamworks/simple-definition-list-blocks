@@ -1,4 +1,5 @@
 {
+  "apiVersion": 2,
   "name": "simple-definition-list-blocks/details-html",
   "title": "dd tag that can use html (Simple Definition List Blocks)",
   "icon": "editor-help",
@@ -10,7 +11,7 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": ".wp-block-simple-definition-list-blocks-details-html"
+      "selector": "dd.wp-block-simple-definition-list-blocks-details-html"
     }
   },
   "keywords": [ "definition", "dd" ],
