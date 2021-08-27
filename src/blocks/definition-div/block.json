@@ -15,5 +15,5 @@
     }
   },
   "keywords": [ "definition", "div" ],
-  "editorScript": "file:../../build/index.js"
+  "editorScript": "file:../../../build/index.js"
 }

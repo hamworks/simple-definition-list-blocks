@@ -18,5 +18,5 @@
     "anchor": true
   },
   "keywords": [ "definition", "dd" ],
-  "editorScript": "file:../../build/index.js"
+  "editorScript": "file:../../../build/index.js"
 }

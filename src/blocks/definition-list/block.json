@@ -7,5 +7,5 @@
   "description": "Display a definition list. Add a term or details.",
   "category": "text",
   "keywords": [ "definition", "dl" ],
-  "editorScript": "file:../../build/index.js"
+  "editorScript": "file:../../../build/index.js"
 }
