@@ -6,7 +6,7 @@
  * Author:            mel_cha
  * Author URI:        https://chiilog.com
  * Text Domain:       simple-definition-list-blocks
- * Version: 4.0.3
+ * Version: 5.0.0
  * Requires at least: 5.8
  *
  * @package         Simple_Definition_List_Blocks
