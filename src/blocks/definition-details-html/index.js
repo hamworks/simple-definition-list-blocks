@@ -1,25 +1,23 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 import metadata from './block.json';
 
 registerBlockType( metadata, {
 	...metadata,
 	edit: () => {
 		const blockProps = useBlockProps();
+		const innerBlocksProps = useInnerBlocksProps( blockProps );
+
 		return (
-			<dd { ...blockProps }>
-				<InnerBlocks
-					renderAppender={ InnerBlocks.ButtonBlockAppender }
-				/>
-			</dd>
+			<dd {...innerBlocksProps} />
 		);
 	},
 	save: () => {
 		const saveBlockProps = useBlockProps.save();
+		const saveInnerBlocksProps = useInnerBlocksProps.save( saveBlockProps );
+
 		return (
-			<dd { ...saveBlockProps }>
-				<InnerBlocks.Content />
-			</dd>
+			<dd {...saveInnerBlocksProps} />
 		);
 	},
 } );

@@ -1,5 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 import metadata from './block.json';
 
 const ALLOWED_BLOCKS = [
@@ -13,21 +13,21 @@ registerBlockType( metadata, {
 	...metadata,
 	edit: () => {
 		const blockProps = useBlockProps();
+		const innerBlocksProps = useInnerBlocksProps( blockProps, {
+			allowedBlocks: ALLOWED_BLOCKS,
+			renderAppender: InnerBlocks.ButtonBlockAppender,
+		} );
+
 		return (
-			<dl { ...blockProps }>
-				<InnerBlocks
-					allowedBlocks={ ALLOWED_BLOCKS }
-					renderAppender={ InnerBlocks.ButtonBlockAppender }
-				/>
-			</dl>
+			<dl { ...innerBlocksProps } />
 		);
 	},
 	save: () => {
 		const saveBlockProps = useBlockProps.save();
+		const saveInnerBlocksProps = useInnerBlocksProps.save( saveBlockProps );
+
 		return (
-			<dl { ...saveBlockProps }>
-				<InnerBlocks.Content />
-			</dl>
+			<dl { ...saveInnerBlocksProps } />
 		);
 	},
 } );
