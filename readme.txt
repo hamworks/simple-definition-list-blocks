@@ -3,7 +3,7 @@ Contributors: mel_cha
 Donate link:       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share
 Tags:              posts, blocks
 Requires at least: 5.6
-Tested up to:      5.8
+Tested up to:      6.2.2
 Requires PHP:      7.2
 Stable tag: 4.0.3
 License: GPLv2 or later
@@ -17,6 +17,11 @@ Add simple definition list block.
 dt, dd, and div tags are supported.
 
 == Changelog ==
+
+= 5.0.0 =
+* Tested on WordPress 6.2.2.
+* Change innerBlocks to React hook.
+* Update apiVersion.
 
 = 4.0.0 =
 * Tested on WordPress 5.8.
