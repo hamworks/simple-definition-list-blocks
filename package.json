@@ -8,7 +8,7 @@
     "@wordpress/i18n": "^4.42.2"
   },
   "devDependencies": {
-    "@wordpress/browserslist-config": "5.25.2",
+    "@wordpress/browserslist-config": "^5.25.2",
     "@wordpress/env": "^8.8.2",
     "@wordpress/eslint-plugin": "^16.0.2",
     "@wordpress/prettier-config": "^2.25.2",
@@ -38,11 +38,11 @@
     "type": "git"
   },
   "scripts": {
-    "build": "NODE_ENV=production npm run build:dev",
-    "build:dev": "wp-scripts build",
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "plugin-zip": "wp-scripts plugin-zip",
     "env": "wp-scripts env",
-    "lint-js": "wp-scripts lint-js src",
-    "lint-js:fix": "npm run lint-js -- --fix",
+    "lint:js": "wp-scripts lint-js",
     "packages-update": "wp-scripts packages-update",
     "start": "wp-scripts start"
   },
