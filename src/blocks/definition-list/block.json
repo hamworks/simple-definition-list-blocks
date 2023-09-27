@@ -5,7 +5,7 @@
   "title": "definition list",
   "icon": "details",
   "textdomain": "simple-definition-list-blocks",
-  "description": "Display a definition list. Add a term or details.",
+  "description": "dl tags. You can add terms, details, or div tags inside.",
   "category": "text",
   "keywords": [ "definition list", "dl" ],
   "editorScript": "file:./index.js"

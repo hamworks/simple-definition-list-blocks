@@ -17,7 +17,7 @@ registerBlockType( name, {
 		'simple-definition-list-blocks'
 	) } (Simple Definition List Blocks)`,
 	description: __(
-		'Display a definition list. Add a term or details.',
+		'dl tags. You can add terms, details, or div tags inside.',
 		'simple-definition-list-blocks'
 	),
 	category,
