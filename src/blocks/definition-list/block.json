@@ -2,11 +2,11 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/list",
-  "title": "definition list (Simple Definition List Blocks)",
-  "icon": "admin-page",
+  "title": "definition list",
+  "icon": "details",
   "textdomain": "simple-definition-list-blocks",
   "description": "Display a definition list. Add a term or details.",
   "category": "text",
-  "keywords": [ "definition", "dl" ],
-  "editorScript": "file:../../../build/index.js"
+  "keywords": [ "definition list", "dl" ],
+  "editorScript": "file:./index.js"
 }

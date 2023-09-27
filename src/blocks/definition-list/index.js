@@ -1,33 +1,32 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks, useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { Icon, details } from '@wordpress/icons';
+import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 
-const ALLOWED_BLOCKS = [
-	'simple-definition-list-blocks/term',
-	'simple-definition-list-blocks/details',
-	'simple-definition-list-blocks/details-html',
-	'simple-definition-list-blocks/div',
-];
+/**
+ * Internal dependencies
+ */
+import Edit from './edit';
+import Save from './save';
 
-registerBlockType( metadata, {
-	...metadata,
-	edit: () => {
-		const blockProps = useBlockProps();
-		const innerBlocksProps = useInnerBlocksProps( blockProps, {
-			allowedBlocks: ALLOWED_BLOCKS,
-			renderAppender: InnerBlocks.ButtonBlockAppender,
-		} );
+const { name, category } = metadata;
 
-		return (
-			<dl { ...innerBlocksProps } />
-		);
-	},
-	save: () => {
-		const saveBlockProps = useBlockProps.save();
-		const saveInnerBlocksProps = useInnerBlocksProps.save( saveBlockProps );
-
-		return (
-			<dl { ...saveInnerBlocksProps } />
-		);
-	},
+registerBlockType( name, {
+	title: `${ __(
+		'definition list',
+		'simple-definition-list-blocks'
+	) } (Simple Definition List Blocks)`,
+	description: __(
+		'Display a definition list. Add a term or details.',
+		'simple-definition-list-blocks'
+	),
+	category,
+	icon: <Icon icon={ details } />,
+	keywords: [
+		'definition list',
+		__( 'definition list', 'simple-definition-list-blocks' ),
+		'dl',
+	],
+	edit: Edit,
+	save: Save,
 } );
