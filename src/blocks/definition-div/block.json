@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/div",
   "title": "Div Tag",
-  "icon": "title",
+  "icon": "group",
   "description": "Add a div tag for inside the dl tag.",
   "textdomain": "simple-definition-list-blocks",
   "category": "text",

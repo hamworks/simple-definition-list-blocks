@@ -1,5 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { title, Icon } from '@wordpress/icons';
+import { group, Icon } from '@wordpress/icons';
 import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 
@@ -21,7 +21,7 @@ registerBlockType( name, {
 		'simple-definition-list-blocks'
 	),
 	category,
-	icon: <Icon icon={ title } />,
+	icon: <Icon icon={ group } />,
 	keywords: [
 		'definition list',
 		__( 'definition list', 'simple-definition-list-blocks' ),
