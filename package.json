@@ -1,6 +1,6 @@
 {
 	"name": "simple-definition-list-blocks",
-	"version": "5.0.2",
+	"version": "5.0.3",
 	"author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
 	"dependencies": {
 		"@wordpress/block-editor": "^12.10.0",
