@@ -2,9 +2,9 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/details",
-  "title": "dd tag (Simple Definition List Blocks)",
-  "icon": "editor-help",
-  "description": "Create dd html tag.",
+  "title": "Dd tag",
+  "icon": "termDescription",
+  "description": "Add a dd tag for inside the dl tag.",
   "textdomain": "simple-definition-list-blocks",
   "category": "text",
   "parent": [ "simple-definition-list-blocks/list", "simple-definition-list-blocks/div" ],
@@ -15,6 +15,6 @@
       "selector": "dd.wp-block-simple-definition-list-blocks-details"
     }
   },
-  "keywords": [ "definition", "dd" ],
-  "editorScript": "file:../../../build/index.js"
+  "keywords": [ "definition list", "dd" ],
+  "editorScript": "file:./index.js"
 }
