@@ -13,7 +13,7 @@ const { name, category } = metadata;
 
 registerBlockType( name, {
 	title: `${ __(
-		'Dl Tag',
+		'DL Tag',
 		'simple-definition-list-blocks'
 	) } (Simple Definition List Blocks)`,
 	description: __(

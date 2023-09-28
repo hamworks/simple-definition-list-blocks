@@ -13,7 +13,7 @@ const { name, attributes, category, parent } = metadata;
 
 registerBlockType( name, {
 	title: `${ __(
-		'Div Tag',
+		'DIV Tag',
 		'simple-definition-list-blocks'
 	) } (Simple Definition List Blocks)`,
 	description: __(
