@@ -1,20 +1,20 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "simple-definition-list-blocks/div",
-  "title": "div tag (Simple Definition List Blocks)",
-  "icon": "welcome-write-blog",
-  "description": "Create div html tag.",
-  "textdomain": "simple-definition-list-blocks",
-  "category": "text",
-  "parent": [ "simple-definition-list-blocks/list" ],
-  "attributes": {
-    "content": {
-      "type": "string",
-      "source": "html",
-      "selector": "div.wp-block-simple-definition-list-blocks-div"
-    }
-  },
-  "keywords": [ "definition", "div" ],
-  "editorScript": "file:../../../build/index.js"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "simple-definition-list-blocks/div",
+	"title": "Div Tag",
+	"icon": "group",
+	"description": "Add a div tag for inside the dl tag.",
+	"textdomain": "simple-definition-list-blocks",
+	"category": "text",
+	"parent": [ "simple-definition-list-blocks/list" ],
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "div.wp-block-simple-definition-list-blocks-div"
+		}
+	},
+	"keywords": [ "definition list", "div" ],
+	"editorScript": "file:./index.js"
 }

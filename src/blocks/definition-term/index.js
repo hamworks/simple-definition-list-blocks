@@ -1,38 +1,36 @@
-import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { title, Icon } from '@wordpress/icons';
+import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 
-registerBlockType( metadata, {
-	...metadata,
-	edit( { attributes: { content }, setAttributes } ) {
-		const blockProps = useBlockProps();
-		const onChangeContent = ( newContent ) => {
-			setAttributes( { content: newContent } );
-		};
+/**
+ * Internal dependencies
+ */
+import { Edit } from './edit';
+import { Save } from './save';
 
-		return (
-			<RichText
-				{ ...blockProps }
-				tagName="dt"
-				onChange={ onChangeContent }
-				value={ content }
-				placeholder={ __(
-					'Start writing dt tag contents.',
-					'simple-definition-list-blocks'
-				) }
-			/>
-		);
-	},
+const { name, category, attributes, parent, supports } = metadata;
 
-	save( { attributes: { content } } ) {
-		const saveBlockProps = useBlockProps.save();
-		return (
-			<RichText.Content
-				{ ...saveBlockProps }
-				tagName="dt"
-				value={ content }
-			/>
-		);
-	},
+registerBlockType( name, {
+	title: `${ __(
+		'Dt Tag',
+		'simple-definition-list-blocks'
+	) } (Simple Definition List Blocks)`,
+	description: __(
+		'Add a dt tag for inside the dl tag.',
+		'simple-definition-list-blocks'
+	),
+	category,
+	icon: <Icon icon={ title } />,
+	parent,
+	attributes,
+	supports,
+	keywords: [
+		'definition list',
+		__( 'definition list', 'simple-definition-list-blocks' ),
+		'dt',
+		__( 'dt', 'simple-definition-list-blocks' ),
+	],
+	edit: Edit,
+	save: Save,
 } );

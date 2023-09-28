@@ -1,23 +1,35 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import { Icon, termDescription } from '@wordpress/icons';
 import metadata from './block.json';
 
-registerBlockType( metadata, {
-	...metadata,
-	edit: () => {
-		const blockProps = useBlockProps();
-		const innerBlocksProps = useInnerBlocksProps( blockProps );
+/**
+ * Internal dependencies
+ */
+import { Edit } from './edit';
+import { Save } from './save';
+import { __ } from '@wordpress/i18n';
 
-		return (
-			<dd {...innerBlocksProps} />
-		);
-	},
-	save: () => {
-		const saveBlockProps = useBlockProps.save();
-		const saveInnerBlocksProps = useInnerBlocksProps.save( saveBlockProps );
+const { name, category, parent, attributes } = metadata;
 
-		return (
-			<dd {...saveInnerBlocksProps} />
-		);
-	},
+registerBlockType( name, {
+	title: `${ __(
+		'Dd Tag (Use HTML)',
+		'simple-definition-list-blocks'
+	) } (Simple Definition List Blocks)`,
+	description: __(
+		'Add a dd tag that can use HTML inside a dl tag.',
+		'simple-definition-list-blocks'
+	),
+	category,
+	icon: <Icon icon={ termDescription } />,
+	keywords: [
+		'definition list',
+		__( 'definition list', 'simple-definition-list-blocks' ),
+		'dd',
+		__( 'dd', 'simple-definition-list-blocks' ),
+	],
+	parent,
+	attributes,
+	edit: Edit,
+	save: Save,
 } );
