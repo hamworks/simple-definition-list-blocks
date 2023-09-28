@@ -2,9 +2,9 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/term",
-  "title": "dt tag (Simple Definition List Blocks)",
-  "icon": "info",
-  "description": "Create dt html tag.",
+  "title": "Dt Tag",
+  "icon": "title",
+  "description": "Add a dt tag for inside the dl tag.",
   "textdomain": "simple-definition-list-blocks",
   "category": "text",
   "parent": [ "simple-definition-list-blocks/list", "simple-definition-list-blocks/div" ],
@@ -18,6 +18,6 @@
   "supports": {
     "anchor": true
   },
-  "keywords": [ "definition", "dd" ],
-  "editorScript": "file:../../../build/index.js"
+  "keywords": [ "definition list", "dt" ],
+  "editorScript": "file:./index.js"
 }
