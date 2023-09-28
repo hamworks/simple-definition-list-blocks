@@ -1,36 +1,36 @@
 {
-  "name": "chiilog/simple-definition-list-blocks",
-  "description": "simple description block",
-  "type": "wordpress-plugin",
-  "license": "GPL-2.0+",
-  "authors": [
-    {
-      "name": "Chiaki Obara",
-      "email": "purgexpurge@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "ext-json": "*"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "*",
-    "wp-coding-standards/wpcs": "*",
-    "phpcompatibility/phpcompatibility-wp": "*",
-    "dealerdirect/phpcodesniffer-composer-installer": "*"
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "phpcs -i"
-    ],
-    "phpcs": [
-      "phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php"
-    ],
-    "fix": [
-      "phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php --report-diff=changes.diff; patch -p0 -ui changes.diff; rm changes.diff"
-    ],
-    "test": [
-      "@phpcs"
-    ]
-  }
+	"name": "chiilog/simple-definition-list-blocks",
+	"description": "simple description block",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Chiaki Obara",
+			"email": "purgexpurge@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.2",
+		"ext-json": "*"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "*",
+		"wp-coding-standards/wpcs": "*",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"dealerdirect/phpcodesniffer-composer-installer": "*"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"phpcs -i"
+		],
+		"phpcs": [
+			"phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php"
+		],
+		"fix": [
+			"phpcs -p -s -v -n --standard=./.phpcs.xml.dist --extensions=php --report-diff=changes.diff; patch -p0 -ui changes.diff; rm changes.diff"
+		],
+		"test": [
+			"@phpcs"
+		]
+	}
 }

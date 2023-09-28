@@ -1,12 +1,12 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "simple-definition-list-blocks/list",
-  "title": "Dl Tag",
-  "icon": "details",
-  "textdomain": "simple-definition-list-blocks",
-  "description": "dl tags. You can add terms, details, or div tags inside.",
-  "category": "text",
-  "keywords": [ "definition list", "dl" ],
-  "editorScript": "file:./index.js"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "simple-definition-list-blocks/list",
+	"title": "Dl Tag",
+	"icon": "details",
+	"textdomain": "simple-definition-list-blocks",
+	"description": "dl tags. You can add terms, details, or div tags inside.",
+	"category": "text",
+	"keywords": [ "definition list", "dl" ],
+	"editorScript": "file:./index.js"
 }

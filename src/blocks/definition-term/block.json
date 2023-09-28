@@ -1,23 +1,26 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "simple-definition-list-blocks/term",
-  "title": "Dt Tag",
-  "icon": "title",
-  "description": "Add a dt tag for inside the dl tag.",
-  "textdomain": "simple-definition-list-blocks",
-  "category": "text",
-  "parent": [ "simple-definition-list-blocks/list", "simple-definition-list-blocks/div" ],
-  "attributes": {
-    "content": {
-      "type": "string",
-      "source": "html",
-      "selector": "dt.wp-block-simple-definition-list-blocks-term"
-    }
-  },
-  "supports": {
-    "anchor": true
-  },
-  "keywords": [ "definition list", "dt" ],
-  "editorScript": "file:./index.js"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "simple-definition-list-blocks/term",
+	"title": "Dt Tag",
+	"icon": "title",
+	"description": "Add a dt tag for inside the dl tag.",
+	"textdomain": "simple-definition-list-blocks",
+	"category": "text",
+	"parent": [
+		"simple-definition-list-blocks/list",
+		"simple-definition-list-blocks/div"
+	],
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "dt.wp-block-simple-definition-list-blocks-term"
+		}
+	},
+	"supports": {
+		"anchor": true
+	},
+	"keywords": [ "definition list", "dt" ],
+	"editorScript": "file:./index.js"
 }
