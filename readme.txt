@@ -18,6 +18,10 @@ dt, dd, and div tags are supported.
 
 == Changelog ==
 
+= 5.0.1 =
+* Tested on WordPress 6.4.
+* Refactor code.
+
 = 5.0.0 =
 * Tested on WordPress 6.2.2.
 * Change innerBlocks to React hook.
