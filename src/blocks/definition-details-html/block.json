@@ -1,23 +1,29 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "simple-definition-list-blocks/details-html",
-	"title": "DD Tag (Use HTML)",
-	"icon": "text",
-	"description": "Add a dd tag that can use HTML inside a dl tag.",
-	"textdomain": "simple-definition-list-blocks",
-	"category": "text",
-	"parent": [
-		"simple-definition-list-blocks/list",
-		"simple-definition-list-blocks/div"
-	],
-	"attributes": {
-		"content": {
-			"type": "string",
-			"source": "html",
-			"selector": "dd.wp-block-simple-definition-list-blocks-details-html"
-		}
-	},
-	"keywords": [ "definition list", "dd" ],
-	"editorScript": "file:./index.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "simple-definition-list-blocks/details-html",
+  "title": "DD Tag (Use HTML)",
+  "icon": "text",
+  "description": "Add a dd tag that can use HTML inside a dl tag.",
+  "textdomain": "simple-definition-list-blocks",
+  "category": "text",
+  "parent": [
+    "simple-definition-list-blocks/list",
+    "simple-definition-list-blocks/div"
+  ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "dd.wp-block-simple-definition-list-blocks-details-html"
+    }
+  },
+  "keywords": [ "definition list", "dd" ],
+  "editorScript": "file:./index.js",
+  "supports": {
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  }
 }
