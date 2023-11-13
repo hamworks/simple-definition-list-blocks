@@ -3,17 +3,17 @@
 	"version": "5.0.3",
 	"author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
 	"dependencies": {
-		"@wordpress/block-editor": "^12.10.0",
-		"@wordpress/blocks": "^12.19.0",
-		"@wordpress/i18n": "^4.42.0",
-		"@wordpress/icons": "^9.33.0"
+		"@wordpress/block-editor": "^12.13.0",
+		"@wordpress/blocks": "^12.22.0",
+		"@wordpress/i18n": "^4.45.0",
+		"@wordpress/icons": "^9.36.0"
 	},
 	"devDependencies": {
-		"@wordpress/browserslist-config": "^5.25.0",
-		"@wordpress/env": "^8.8.0",
-		"@wordpress/eslint-plugin": "^16.0.0",
-		"@wordpress/prettier-config": "^2.25.0",
-		"@wordpress/scripts": "^26.13.0",
+		"@wordpress/browserslist-config": "^5.28.0",
+		"@wordpress/env": "^8.11.0",
+		"@wordpress/eslint-plugin": "^17.2.0",
+		"@wordpress/prettier-config": "^3.2.0",
+		"@wordpress/scripts": "^26.16.0",
 		"eslint-plugin-prettier": "^5.0.0",
 		"prettier": "npm:wp-prettier@3.0.3"
 	},
