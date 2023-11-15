@@ -3,7 +3,7 @@
 **Donate link:**       https://www.amazon.jp/hz/wishlist/ls/1PNJLOPSM85GC?ref_=wl_share  
 **Tags:**              posts, blocks  
 **Requires at least:** 5.6  
-**Tested up to:**      6.2.2  
+**Tested up to:**      6.4.1  
 **Requires PHP:**      7.2  
 **Stable tag:**        nightly  
 **License:** GPLv2 or later  
@@ -17,6 +17,12 @@ Add simple definition list block.
 dt, dd, and div tags are supported.
 
 ## Changelog ##
+
+### 6.0.0 ###
+* Tested on WordPress 6.4.1.
+* Fix description `simple-definition-list-blocks/list`.
+* Add supports `spacing`.
+* Add supports `typography` to dt and dd.
 
 ### 5.0.3 ###
 * Fix icon and title.
