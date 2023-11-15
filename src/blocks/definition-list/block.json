@@ -5,7 +5,7 @@
   "title": "DL Tag",
   "icon": "page",
   "textdomain": "simple-definition-list-blocks",
-  "description": "dl tags. You can add terms, details, or div tags inside.",
+  "description": "dl tag. You can add dt tag, dd tag, or div tag inside.",
   "category": "text",
   "keywords": [ "definition list", "dl" ],
   "editorScript": "file:./index.js",
