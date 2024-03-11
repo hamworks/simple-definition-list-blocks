@@ -10,6 +10,8 @@ const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/details-html',
 ];
 
+import './editor.scss';
+
 export default function Edit() {
 	const blockProps = useBlockProps();
 	const innerBlocksProps = useInnerBlocksProps( blockProps, {

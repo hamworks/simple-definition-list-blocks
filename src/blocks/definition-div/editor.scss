@@ -1,0 +1,13 @@
+.wp-block-simple-definition-list-blocks-div {
+
+	& > .block-list-appender {
+		display: none;
+	}
+
+	&.is-selected,
+	&.has-child-selected {
+		& > .block-list-appender {
+			display: block;
+		}
+	}
+}

@@ -4,6 +4,8 @@ import {
 	useInnerBlocksProps,
 } from '@wordpress/block-editor';
 
+import './editor.scss';
+
 const ALLOWED_BLOCKS = [
 	'simple-definition-list-blocks/term',
 	'simple-definition-list-blocks/details',

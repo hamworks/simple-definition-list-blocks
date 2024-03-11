@@ -8,11 +8,12 @@
   "description": "dl tag. You can add dt tag, dd tag, or div tag inside.",
   "category": "text",
   "keywords": [ "definition list", "dl" ],
-  "editorScript": "file:./index.js",
   "supports": {
     "spacing": {
       "padding": true,
       "margin": true
     }
-  }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
 }

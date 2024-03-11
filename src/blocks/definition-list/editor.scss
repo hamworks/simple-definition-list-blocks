@@ -1,0 +1,22 @@
+.wp-block-simple-definition-list-blocks-list {
+
+	& > .block-list-appender {
+		display: none;
+	}
+
+
+	&.is-selected,
+	&.has-child-selected {
+		padding-bottom: 16px;
+
+		& > .block-list-appender {
+			display: flex;
+
+			& .block-editor-button-block-appender.components-button.components-button {
+				padding: 0 !important;
+				color: #fff;
+				background-color: #1e1e1e;
+			}
+		}
+	}
+}
