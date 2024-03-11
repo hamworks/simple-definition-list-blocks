@@ -11,13 +11,6 @@
     "simple-definition-list-blocks/list",
     "simple-definition-list-blocks/div"
   ],
-  "attributes": {
-    "content": {
-      "type": "string",
-      "source": "html",
-      "selector": "dd.wp-block-simple-definition-list-blocks-details-html"
-    }
-  },
   "keywords": [ "definition list", "dd" ],
   "editorScript": "file:./index.js",
   "supports": {
