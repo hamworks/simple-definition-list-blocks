@@ -1,6 +1,6 @@
 {
 	"name": "simple-definition-list-blocks",
-	"version": "6.0.0",
+	"version": "6.0.1",
 	"author": "Chiaki Okamoto <purgexpurge@gmail.com> (https://chiilog.com/)",
 	"dependencies": {
 		"@wordpress/block-editor": "^12.21.0",
@@ -43,7 +43,7 @@
 		"build": "wp-scripts build",
 		"format": "wp-scripts format",
 		"plugin-zip": "wp-scripts plugin-zip",
-    "wp-env": "wp-env",
+		"wp-env": "wp-env",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"start": "wp-scripts start"
